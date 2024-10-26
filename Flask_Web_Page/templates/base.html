@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{% block title %}{% endblock %}</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+	
+	<div class="menu">
+		<a class="menu-button" href="{{ url_for('index') }}">Home</a>
+		<a class="menu-button" href="{{ url_for('active') }}">Active</a>
+		<a class="menu-button" href="{{ url_for('Link') }}">Link</a>
+		<a class="menu-button" href="{{ url_for('Link_2') }}">Link_2</a>
+	</div>
+	<div class="divider"></div>
+	<div class="content">
+		{% block body %}{% endblock %}
+	</div>
+</body>
+</html>
+
