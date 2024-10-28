@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block title %}
+Portfolio
+{% endblock %}
+{% block body %}
+    <header class="header">
+        <div class="header__wrapper">
+            <h1 class="header__title">
+                <strong>Hi, my name is <em> Narek</em></strong>
+            </h1>
+            <div class="header__text">
+                <p>This is my AWS Web Page</p>
+            </div>
+	    <a href="/download" class="btn">Download CV</a>
+        </div>
+    </header>
+
+    <main class="section">
+        <div class="container">
+            <div class="project-details">
+
+                <h1 class="title-1">Project</h1>
+
+		<img src="{{ url_for('static', filename='/img/projects/01.png') }}" alt="" class="project-details__cover">
+
+                <div class="project-details__desc">
+                    <p>Skills: Python, Html, CSS</p>
+                </div>
+
+                <a href="https://github.com/Narek-Mkhitaryan/AWS" target="_blank" class="btn-outline">
+			<img src="{{ url_for('static', filename='/img/icons/gitHub-black.svg') }}" alt="">
+                    GitHub repo
+                </a>
+
+            </div>
+        </div>
+    </main>
+{% endblock %}
+
