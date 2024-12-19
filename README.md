@@ -4,7 +4,7 @@
 How to run the code:
 Step 0: Download files form Github
   1. Opet Terminal and choose repository where you want to clone files from Github
-  2. Use following command for cloning by SSH connection `git clone and link form the repo`
+  2. Use following command for cloning by SSH connection `git clone [link_form_the_repo]`
 
        
 Step 1: Creat virtual environment
